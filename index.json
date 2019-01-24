@@ -1,4 +1,5 @@
 {
-	"Code": `
-	hey`
+	"Code": {
+		"tell":"()=>{ console.log('hey'); }"
+	}
 }
