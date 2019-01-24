@@ -1,6 +1,5 @@
-
 {
 	"Code": {
-		"createRectangle":"()=>{ console.log('hey'); }"
+		"createRectangle":"(w,h,color)=>{ a = this.context.createImageData(w,h); var colors = new Array(w*h); var c = (w*h)/color.length; for(var i=0;i<w*h;i++) { colors[i]=color[Math.floor(i/c)]; } for(var i=0;i<w*h*4;i+=4) { a.data[i]=colors[i/4][0]; a.data[i+1]=colors[i/4][1]; a.data[i+2]=colors[i/4][2]; a.data[i+3]=colors[i/4][3]; } return a; }"
 	}
 }
